@@ -10,7 +10,7 @@ const rootArea = document.getElementById('root')
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <p>Esta es la página de inicio</p>,
+    element: <p>Esta es la página inicial</p>,
   },
   {
     path: '/login',
