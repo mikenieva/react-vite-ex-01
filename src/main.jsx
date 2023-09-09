@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import Root from './routes/root.jsx'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ErrorPage from './error-page'
 
 const rootArea = document.getElementById('root')
 
@@ -12,6 +12,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Root />,
+    errorElement: <ErrorPage />,
   },
   {
     path: '/login',
