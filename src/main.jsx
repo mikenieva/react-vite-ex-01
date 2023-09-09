@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import Root from './routes/root.jsx'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -10,7 +11,7 @@ const rootArea = document.getElementById('root')
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <p>Esta es la página inicial</p>,
+    element: <Root />,
   },
   {
     path: '/login',
